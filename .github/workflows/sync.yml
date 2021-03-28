@@ -1,9 +1,7 @@
 name: Merge upstream repository
 on:
   schedule:
-    # actually, ~5 minutes is the highest
-    # effective frequency you will get
-    - cron:  '* * * * *'
+    - cron:  '*/5 * * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
